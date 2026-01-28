@@ -1,6 +1,8 @@
 # DreamScene-Simple-OpenGL-3D-Renderer
 
-<img src="images/preview.png" width="400">
+<img src="images/preview.png" width="400"> <img src="images/ref.jpg" width="305">
+
+reference: https://www.behance.net/gallery/19119689/counting-sheep/modules/129304691
 
 DreamScene is a small **Modern OpenGL (C++) project** that renders a 3D scene using custom shaders, lighting, and camera controls.
 
