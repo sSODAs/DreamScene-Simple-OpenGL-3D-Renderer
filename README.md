@@ -35,3 +35,34 @@ Lighting is calculated in the fragment shader on a per-pixel basis, using the cu
 - **W / A / S / D** – Move camera
 - **Mouse** – Look around
 - **Space / Left Shift** – Move up / down
+
+## Install & Quickstart
+**1. VS Code extensions**
+- C/C++ (ms-vscode.cpptools)
+- CMake Tools (ms-vscode.cmake-tools)
+
+**2. Toolchain**
+- Windows: Visual Studio 2022 (Desktop C++), Git, CMake
+- macOS: Xcode CLT (```xcode-select --install```), Git, CMake, Ninja (```brew install cmake ninja```)
+- Ubuntu/Debian: ```sudo apt install -y build-essential git cmake ninja-build```
+
+**3. setup & clone**
+```base
+git clone https://github.com/sSODAs/DreamSheep-Simple-OpenGL-3D-Renderer.git
+```
+
+**4. vcpkg**
+(one-time only after clone this project)
+- Windows (PowerShell):
+```base
+git clone https://github.com/microsoft/vcpkg $env:USERPROFILE\vcpkg
+& $env:USERPROFILE\vcpkg\bootstrap-vcpkg.bat
+setx VCPKG_ROOT "$env:USERPROFILE\vcpkg"
+```
+
+- macOS/Linux:
+```base
+git clone https://github.com/microsoft/vcpkg ~/vcpkg ~/vcpkg/bootstrap-vcpkg.sh echo 'export
+VCPKG_ROOT="$HOME/vcpkg"' >> ~/.zshrc # or ~/.bashrc export VCPKG_ROOT="$HOME/vcpkg"
+```
+
